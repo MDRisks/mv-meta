@@ -5,10 +5,10 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(mv.starnavi.co ec2-3-16-47-89.us-east-2.compute.amazonaws.com)
+domains=(mv.starnavi.co)
 rsa_key_size=4096
 data_path="./data/certbot"
-email="nicholas.petros@gmail.com" # Adding a valid address is strongly recommended
+email="borys.lemeshko@starnavi.io" # Adding a valid address is strongly recommended
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
 if [ -d "$data_path" ]; then
